@@ -1,0 +1,41 @@
+!!를 입력했을 때 아래 코드가 자동완성 되도록 설정
+
+-----------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+
+------------------------------------------------------------------------------
+
+VSC 들어가서 왼쪽 하단의 설정(톱니바퀴 아이콘) > 사용자 코드 조각(User Snippets) > 검색창에 "html.json" 입력(안나오면 html만 검색)
+> { }안에 다음의 코드를 붙여 넣기(중괄호가 없을 경우 중괄호를 감싸서 넣으면 됨)
+
+"html": {
+"prefix": "!!",
+"body": [
+    "<!DOCTYPE html>",
+    "<html lang=\"ko-KR\">",
+    "  <head>",
+    "    <meta charset=\"UTF-8\">",
+    "    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+    "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+    "    <title>$1</title>",
+    "  </head>",
+    "  <body>",
+    "    $2",
+    "",
+    "  </body>",
+    "</html>",
+    ""
+],
+"description": "한국어 페이지용 html 템플릿"
