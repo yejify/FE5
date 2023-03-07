@@ -5,25 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>슬로건 만들기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
         }
-        .box {
-            width: 800px;
-            height: 500px;
-            margin: auto;
+        body {
+            width: 100%;
+            height: 100vh;
             overflow: hidden;
+            position: relative;
+        }
+        body::after {
+            width: 100%;
+            height: 100%;
+            background-image:url(img/4.jpg);
+            background-size: 100% 100%;
+            content: "";
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .box {
+            margin: auto;
+            text-align: center;
+            padding-top: 30vh;
+        }
+        .boxMainText{
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 30px;
+            text-align: center;
+
         }
     </style>
   </head>
   <body>
     <div class="box">
-        <img class="boxImg" src="img/1.jpg">
-        <p class="boxMainText">The greatest glory in living lies not in never falling, but in rising every time we fall.</p>
-        <p class="boxSubText">인생에서 가장 큰 영광은 넘어지지 않는 것에 있는 것이 아니라 매번 일어선다는 데 있다.</p>
-        <p class="boxAuthor">Nelson Mandela(넬슨 만델라)</p>
+        <p class="boxMainText">The greatest glory in living lies not in never falling, but in rising every time we fall - Nelson Mandela</p>
+        <p class="boxSubText">인생에서 가장 큰 영광은 넘어지지 않는 것에 있는 것이 아니라 매번 일어선다는 데 있다 - 넬슨 만델라</p>
     </div>
   </body>
 </html>
