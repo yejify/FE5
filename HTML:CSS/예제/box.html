@@ -9,6 +9,36 @@
       div{
         width: 100px;
         height: 48px;
+        /* 가로에서 중앙정렬 */
+        text-align: center;
+        /* border가 box사이즈 밖으로 나오는 걸 막는것 */
+        box-sizing: border-box;
+        /* 세로에서 중앙정렬 */
+        line-height: 38px;
+      }
+      /* div에 같이 넣지 않은 이유는 첫번째 요소를 뺀 나머지 div를 선택하려고 한 것(일반형제결합자) */
+      div~div{
+        margin-top: 20px;
+      }
+      .box1{
+        border: 5px solid #000;
+        background-color: #343f50;
+        box-shadow: inset 5px 5px #4a5568;
+        color: #ffffff;
+      }
+      .box2{
+        border: 5px dashed rgb(134, 17,136);
+        background: linear-gradient(180deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+        color: #fff;
+        /* 백그라운드 영역을 어디까지 할 지 선택하는 프로퍼티 */
+        background-clip: padding-box;
+        border-radius: 24px;
+      }
+      .box3{
+        border: 5px solid lightgray;
+        border-radius: 0 24px 24px 24px;
+        /* offset-x | offset-y | blur-radius | color */
+        box-shadow: 5px 5px 10px lightgrey;
       }
     </style>
   </head>
