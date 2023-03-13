@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        [type]{
+            width: 88px;
+            height: 32px;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            border: 1px solid #1a202c;
+            background-color: #343F50;
+            box-sizing: border-box;
+            box-shadow: inset 1px 1px #4a5568;
+            color: #CBD5DF;
+        }
+        .positive{
+            color: #439AFF;
+        }
+        .negative{
+            color:#EB5757;
+        }
+        :disabled{
+            color:#4A5568;
+        }
+        [type]:hover{
+            color: #fff;
+            text-decoration: underline;
+        }
+        .normal:active{
+            box-shadow: inset 1px 1px #262F3E;
+        }
+        .positive:hover{
+            background-color: #439AFF;
+            border: 1px solid #439AFF;
+            box-shadow: inset 1px 1px #73B4FF;
+        }
+        .positive:active{
+            box-shadow: inset 1px 1px #3B78BE;
+        }
+        .negative:hover{
+            background-color: #EB5757;
+            border: 1px solid #EB5757;
+            box-shadow: inset 1px 1px #FD6F6F;
+        }
+        .negative:active{
+            box-shadow: inset 1px 1px #D94242;
+        }
+    </style>
+  </head>
+  <body>
+    <button type="button" class="normal">button</button>
+    <button type="button" class="positive">button</button>
+    <button type="button" class="negative">button</button>
+    <button type="button" disabled>button</button>
+
+</html>
