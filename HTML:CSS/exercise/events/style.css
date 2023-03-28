@@ -1,0 +1,129 @@
+:root {
+    font-family: 'Montserrat', sans-serif;
+	/*
+	font-weight: 500;
+	font-weight: 700;
+	*/
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,p{
+	font-size: inherit;
+	font-weight: inherit;
+}
+.zigzag{
+	background-color: #673399;
+	padding: 100px 0;
+}
+.wrap{
+	width: 1080px;
+	margin:0 auto 100px;
+}
+.wrap header{	display: flex;
+	align-items: center;
+}
+.zigzag .wrap h2{
+	font-size: 40px;
+	color: #fff;
+	z-index: 10;
+}
+.wrap p{
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	color: #bd8fe8;
+	max-width: 600px;
+}
+.wrap h2 span{
+	display: block;
+	width: max-content;
+	position: relative;
+}
+.wrap h2 span::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-right: -10px;
+	height: 15px;
+	background-color: orangered;
+	z-index: -1;
+}
+.wrap p::before{
+	content: "";
+	width: 300px;
+	height: 2px;
+	margin: 0 30px;
+	background-color: #bd8fe8;
+}
+.zigzag main{
+	width: 1080px;
+	margin: 0 auto;
+}
+.main-list>li{
+	margin-top: 24px;
+	display: flex;
+	background-color: #fff;
+}
+.main-list>li h2{
+	width: 250px;
+	background-size: 100% 100%;
+	background-image: url(images/photo01.png);
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+.main-list>li .craft{
+	background-image: url(images/photo02.png);
+}
+.main-list>li .scrap{
+	background-image: url(images/photo03.png);
+}
+.reverse{
+	flex-direction: row-reverse;
+}
+.main-list>li .sub-list{
+	padding: 24px;
+}
+.main-list>li .sub-list h3{
+	color: #673399;
+	margin-bottom: 32px;
+}
+.reverse-list{
+margin-right: 100px;
+}
+.events{
+	background-color: seashell;
+	padding: 100px 0;
+}
+.events .wrap h2{
+	font-size: 40px;
+	color: salmon;
+	z-index: 10;
+}
+.events .wrap h2 span::before{
+	background-color: #fff;
+}
+.events button{
+	margin-left: auto;
+	font-size: 14px;
+	background-color: orangered;
+	padding: 12px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	box-shadow: 0 5px rgb(205 55 0);
+}
+.events section{
+	width: 1080px;
+}
+.events section .events-list{
+	display: flex;
+	gap: 24px;
+	list-style: none;
+}
